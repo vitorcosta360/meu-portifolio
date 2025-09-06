@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍔 Hamburgueria do Vitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        select, input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .options {
+            margin-bottom: 15px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .btn {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #27ae60;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #219150;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍔 Hamburgueria do Vitor</h1>
+    </header>
+
+    <main>
+        <p>Monte seu lanche personalizado:</p>
+
+        <form>
+            <label for="lanche">Escolha o lanche:</label>
+            <select id="lanche" name="lanche">
+                <option value="cheeseburger">Cheeseburger</option>
+                <option value="xbacon">X-Bacon</option>
+                <option value="duplo">Duplo Smash</option>
+                <option value="veggie">Veggie Burger</option>
+            </select>
+
+            <div class="options">
+                <label>Ponto da carne:</label><br>
+                <input type="radio" name="carne" value="malpassado"> Mal passado<br>
+                <input type="radio" name="carne" value="ao-ponto"> Ao ponto<br>
+                <input type="radio" name="carne" value="bem-passado"> Bem passado
+            </div>
+
+            <div class="options">
+                <label>Extras:</label><br>
+                <input type="checkbox" name="extra" value="bacon"> Bacon<br>
+                <input type="checkbox" name="extra" value="queijo"> Queijo extra<br>
+                <input type="checkbox" name="extra" value="salada"> Salada
+            </div>
+
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            <input type="submit" value="Fazer Pedido" class="btn">
+        </form>
+    </main>
+</body>
+</html>

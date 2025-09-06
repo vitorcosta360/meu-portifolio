@@ -1,0 +1,84 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Menu fixo */
+header {
+    background: #333;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {/* lista de navegação */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {/* itens de navegação */
+    margin: 0 15px;
+}
+
+nav a {/* links de navegação */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+}
+
+nav a:hover {/* efeito hover nos links */
+    background: #444;
+    border-radius: 5px;
+}
+
+/* Conteúdo */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {/* títulos */
+    color: #222;
+}
+
+form {/* formulário de contato */
+    display: flex;
+    flex-direction: column;
+}
+
+label {/* rótulos do formulário */
+    margin: 10px 0 5px;
+}
+
+input, textarea {/* campos de entrada */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button {/* botão de envio */
+    margin-top: 15px;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {/* efeito hover no botão */
+    background: #555;
+}

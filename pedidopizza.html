@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍕 Pizzaria do Vitor</title>
+    <!--o estilo da pagina-->
+    <style> 
+        body { /* estilo do corpo da pagina */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        header { /* cabeçalho */
+            background: #8e44ad;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 { /* título principal */
+            margin: 0;
+        }
+
+        main { /* área principal */
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        form { /* formulário */
+            display: flex;
+            flex-direction: column;
+        }
+
+        label { /* rótulos */
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        select, input[type="text"] { /* campos de seleção e texto */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .options { /* opções */
+            margin-bottom: 15px;
+        }
+
+        input[type="radio"], input[type="checkbox"] { /* botões de opção e caixas de seleção */
+            margin-right: 8px;
+        }
+
+        .btn { /* botão */
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #8e44ad;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover { /* efeito hover no botão */
+            background: #732d91;
+        }
+    </style>
+</head>
+<body>
+    <header>  <!-- cabeçalho -->
+        <h1>🍕 Pizzaria do Vitor</h1>
+    </header>
+
+    <main> <!-- área principal -->
+        <p>Monte sua pizza personalizada:</p>
+
+        <form> <!-- formulário -->
+            <label for="sabor">Escolha o sabor:</label>
+            <select id="sabor" name="sabor">
+                <option value="calabresa">Calabresa</option>
+                <option value="mussarela">Mussarela</option>
+                <option value="portuguesa">Portuguesa</option>
+                <option value="doce">Doce</option>
+            </select>
+
+            <div class="options">
+                <label>Tamanho:</label><br>
+                <input type="radio" name="tamanho" value="pequena"> Pequena<br>
+                <input type="radio" name="tamanho" value="media"> Média<br>
+                <input type="radio" name="tamanho" value="grande"> Grande
+            </div>
+
+            <div class="options">
+                <label>Bebida:</label><br>
+                <input type="checkbox" name="bebida" value="coca"> Coca-Cola<br>
+                <input type="checkbox" name="bebida" value="guarana"> Guaraná
+            </div>
+
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            <input type="submit" value="Fazer Pedido" class="btn">
+        </form>
+    </main>
+</body>
+</html>
